@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import java.util.List;
 
 @Entity
+@Table(name = "app_user") // Especifica um nome de tabela alternativo
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
